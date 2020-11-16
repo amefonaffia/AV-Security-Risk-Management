@@ -1,0 +1,70 @@
+%\begin{landscape}
+\begin{table}[htp!]
+\vspace{-15pt}
+    \centering
+    \label{tab:relatedwork}
+    \caption{Comparison with literature related to security risk estimation and management in AVs (incomplete)}
+    \begin{tabular}{|p{0.33\linewidth}|p{0.08\linewidth}|p{0.08\linewidth}|p{0.1\linewidth}|p{0.13\linewidth}|p{0.15\linewidth}|p{0.1\linewidth}|}
+    \hline
+        Related Work & \multicolumn{3}{c|}{Risk management} & \multicolumn{2}{c|}{Vehicular Autonomy} &  \multirow{2}{*}{Security} \\  \cline{2-6}
+         & Threat & Impact & Solution & Connected & Autonomous & Focus \\ \hline
+         
+        Chattopadhyay, A. et al.~\cite{chattopadhyay2020autonomous} &  &  &  &   & \ding{51} & \ding{51} \\ \hline
+        Parkinson, S. et al.~\cite{parkinson2017cyber} & \ding{51} &  &   & \ding{51} & \ding{51} & \ding{51} \\ \hline
+        Petit, J. and Shladover, S.E.~\cite{petit2014potential} & \ding{51} &  &  & \ding{51} & \ding{51} &  \ding{51} \\ \hline
+        Cui, Jin, et al.~\cite{cui2019collaborative} &  &  &  &    & \ding{51} &  SS \\ \hline
+       % Plosz, S. and Varga, P. et al~\cite{plosz2018security} & \ding{51} &  & \ding{51}   &  & \ding{51} &  SS \\ \hline
+        Mancini, F., et al.~\cite{mancini2020security}  & \ding{51} &  & \ding{51} &   & \ding{51} & \ding{51} \\ \hline
+        Promyslov, V. and Semenkov, K.,~\cite{promyslov2020method} & \ding{51} & \ding{51} & &   & \ding{51} &  \ding{51} \\ \hline
+        Malik, S. and Sun, W.,~\cite{malik2020analysis} & \ding{51} &  &  &  & \ding{51} &  \ding{51} \\ \hline
+        Behfarnia, A. and Eslami, A., ~\cite{behfarnia2018risk} & \ding{51} &  & \ding{51} &   & \ding{51} &  \ding{51} \\ \hline
+         Al Mamun, A. et al.~\cite{al2018challenges} & \ding{51} &  & & LD & LD & \ding{51} \\ \hline
+        Virag, David, et al.~\cite{virag2020security} & \ding{51} &  & \ding{51} &  &   \ding{51} &  \ding{51} \\ \hline
+        Sharma, P., et al.~\cite{sharma2019attacks} & \ding{51} &  &   &  & \ding{51} & \ding{51} \\ \hline
+        Cui, Jin, et al.~\cite{cui2019review} &  &  & \ding{51} &   & \ding{51} & \ding{51} \\ \hline
+        Affia, A.O. et al~\cite{affia2019security} & \ding{51} &  & \ding{51} &  \ding{51} & \ding{51} & \ding{51} \\ \hline
+        Sheehan, Barry, et al.~\cite{sheehan2019connected} & \ding{51} &  &  &    & \ding{51} & \ding{51} \\ \hline
+        Dibaei, Mahdi, et al.~\cite{dibaei2020attacks} & \ding{51} &  & \ding{51} &   \ding{51} &  & \ding{51} \\ \hline
+        De La Torre, G. et al.~\cite{de2020driverless} & \ding{51} &  &  &  &   \ding{51} & \ding{51} \\ \hline
+        %Meryem, S. and Mazri, T. et al.~\cite{meryem2019security} & \ding{51} &    &  &  & \ding{51} & \ding{51} \\ \hline
+        %Gonçalves, Fábio, et al.~\cite{gonccalves2018secure} & \ding{51} &  & \ding{51}   &  & \ding{51} & \ding{51} \\ \hline
+        Lima, A, et al.~\cite{lima2016towards} &  &  & - &    & \ding{51} & SS \\ \hline
+        Dominic, Derrick, et al.~\cite{dominic2016risk} & \ding{51} &  & \ding{51} & LD & ND & \ding{51} \\ \hline
+        %Islam, M.M., et al.~\cite{islam2016risk} &  &  & Risk assessment framework &  &  Automotive & \ding{51} \\ \hline
+        Kong, H. K. et al.~\cite{kong2018security} &  &  &  &  & \ding{51} & \ding{51} \\ \hline
+        This Paper &  \ding{51} & \ding{51} & \ding{51} &  \ding{51} & \ding{51} & \ding{51} \\ \hline
+        \multicolumn{7}{c}{{\raggedright \ding{51} - Detailed Discussion; LD - Limited Discussion; ND - No Discussion; \par}} \\
+         \multicolumn{7}{c}{{\raggedright SS - Discusses security and safety. \par }}
+    \end{tabular} 
+ \vspace{-15pt}   
+\end{table}
+%\end{landscape}
+
+
+% countermeasures
+\begin{table}[h!]
+\caption{Countermeasures and estimated costs for Bolt prototype.}
+%\tiny 
+\scriptsize
+\label{tab:countermeasures}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Countermeasure}               & \textbf{Estimated cost}             \\ \hline
+Noise detection and rejection         & Low                                 \\ \hline
+Multiple sensors for redundancy check & Low to High (depends on the sensor) \\ \hline
+Filter to remove harmful light        & Low to High (depends on type)       \\ \hline
+Random probing on LiDAR               & Low                                 \\ \hline
+Shorten pulse on LiDAR                & Low                                 \\ \hline
+Device and user authentication        & Medium                              \\ \hline
+Access control                        & Low                                 \\ \hline
+Anti-Malware                          & Low                                 \\ \hline
+Firewall                              & Low                                 \\ \hline
+Encryption                            & High                                \\ \hline
+Isolation                             & Medium                              \\ \hline
+Nullification                         & High                                \\ \hline
+Input validation                      & Low                                 \\ \hline
+\end{tabular}%
+}
+\vspace{-15pt}
+\end{table}
